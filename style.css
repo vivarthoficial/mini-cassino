@@ -1,45 +1,32 @@
 body {
-  background: #111;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
-  padding: 0;
 }
 
 .casino {
   margin-top: 100px;
 }
 
-.slot {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+.menu {
+  margin-top: 40px;
 }
 
-.reel {
-  font-size: 60px;
-  margin: 10px;
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: gold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: orange;
-}
-
-.balance {
+.game-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 15px;
   font-size: 20px;
-  margin: 10px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.game-btn:hover {
+  background: orange;
+  transform: scale(1.1);
 }
