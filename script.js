@@ -1,5 +1,3 @@
-let balance = 100;
-
 function spin() {
   const symbols = ["🍒", "🍋", "⭐", "💎", "7️⃣"];
 
@@ -11,19 +9,14 @@ function spin() {
   document.getElementById("r2").innerText = r2;
   document.getElementById("r3").innerText = r3;
 
-  balance -= 10;
-
   if (r1 === r2 && r2 === r3) {
-    balance += 50;
     document.getElementById("result").innerText = "🎉 Você ganhou!";
   } else {
     document.getElementById("result").innerText = "😢 Tente novamente!";
   }
+}
 
-  if (balance <= 0) {
-    balance = 0;
-    document.getElementById("result").innerText = "💀 Saldo zerado!";
-  }
-
-  document.getElementById("balance").innerText = balance;
+function rollDice() {
+  let dice = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("diceResult").innerText = "🎲 " + dice;
 }
